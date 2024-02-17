@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #1e293b;
+}
+::selection {
+  color: #fff;
+  background: #1e293b;
+}
+
+.inputbox {
+  max-width: 405px;
+  background: #fff;
+  margin: 137px auto;
+  padding: 28px 0 30px;
+  border-radius: 7px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.task-input {
+  height: 52px;
+  padding: 0 25px;
+  position: relative;
+}
+
+.task-input img {
+  top: 50%;
+  position: absolute;
+  transform: translate(17px, -50%);
+}
+
+.task-input input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 0 20px 0 53px;
+  border: 1px solid #999;
+}
+
+.task-input input:focus,
+.task-input input.active {
+  padding-left: 52px;
+  border: 2px solid #1e293b;
+}
+
+.task-input input::placeholder {
+  color: #bfbfbf;
+}
+
+.controls,
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  padding: 18px 25px;
+  border-bottom: 1px solid #ccc;
+}
+.filtros span {
+  margin: 0 8px;
+  font-size: 17px;
+  color: #444;
+  cursor: pointer;
+}
+
+.filtros span:first-child {
+  margin-left: 0;
+}
+
+.filtros span.active {
+  color: #1e293b;
+}
+
+.controls .clear-btn {
+  border: none;
+  opacity: 0.6;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 7px 13px;
+  border-radius: 4px;
+  background: #1e293b;
+  letter-spacing: 0.3px;
+  pointer-events: none;
+  transition: transform 0.25 ease;
+}

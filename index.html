@@ -3,11 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <title>To do list</title>
   </head>
   <body>
-    <span class="concluida">Concluída</span>
-    <span class="novaTarefa">Nova tarefa</span>
-    <span class="todas">Todas</span>
+    <div class="inputbox">
+      <div class="task-input">
+        <img src="/imagens/icons8-menu-bar-16.png">
+        <input type="text" placeholder= "Nova tarefa">
+      </div>
+      <div class="filtros">
+        <span id="all" class="active">Todas</span>
+        <span id="pendentes">Pendentes</span>
+        <span id="completas">Completas</span>
+      </div>
+      <button class="clear-btn">Limpar tudo</button>
+    </div>
+      <ul class="task-box"></ul>
+      
+      </div>
+
+    <script src="lista.js"></script>
   </body>
 </html>
